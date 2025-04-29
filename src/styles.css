@@ -2,6 +2,12 @@ body {
   background-color: #444544;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #logoImage {
     width: 128px;
     height: auto;
