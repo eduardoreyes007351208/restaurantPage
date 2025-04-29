@@ -10,6 +10,12 @@ header {
     justify-content: space-between;
 }
 
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #logoImage {
     width: 128px;
     height: auto;
