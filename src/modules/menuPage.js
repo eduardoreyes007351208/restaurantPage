@@ -20,9 +20,9 @@ export const menuPage = () => {
     addRecipe('Raspberry Bowl', 5, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget elit ac ligula porta semper tincidunt nec lorem. Curabitur at.', menuList)
     addRecipe('HoneyBowl', 7, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget elit ac ligula porta semper tincidunt nec lorem. Curabitur at.', menuList)
 
-    content.innerHTML = '<ul>' + menuList.map((menuItem) => {
+    content.innerHTML = '<h1>Menu</h1> <ul>' + menuList.map((menuItem) => {
         return `<li>
-            <div>
+            <div class="menuCard">
                 <h2>${menuItem.name}</h2>
                 <span>${menuItem.price}</span>
                 <p>${menuItem.desc}</p>
