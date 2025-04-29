@@ -5,13 +5,29 @@
 
 import { content } from "./elements"
 
+function createMeal (name, price, desc) {
+    return {name, price, desc};
+}
+let addRecipe = (n, p, d, m) => {
+    let meal = createMeal(n, p, d)
+    m.push(meal)
+}
+
 export const menuPage = () => {
-    console.log('menu')
-    content.innerHTML = `
-        <div id="contentText">
-            <h2><em>Menu</em> <br> Your place for healthy food</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-    `
+    const menuList = [];
+    addRecipe('Acai Bowl', 9, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget elit ac ligula porta semper tincidunt nec lorem. Curabitur at.', menuList)
+    addRecipe('Blueberry Bowl', 5, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget elit ac ligula porta semper tincidunt nec lorem. Curabitur at.', menuList)
+    addRecipe('Raspberry Bowl', 5, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget elit ac ligula porta semper tincidunt nec lorem. Curabitur at.', menuList)
+    addRecipe('HoneyBowl', 7, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget elit ac ligula porta semper tincidunt nec lorem. Curabitur at.', menuList)
+
+    content.innerHTML = '<ul>' + menuList.map((menuItem) => {
+        return `<li>
+            <div>
+                <h2>${menuItem.name}</h2>
+                <span>${menuItem.price}</span>
+                <p>${menuItem.desc}</p>
+            </div>
+        </li>`
+    }).join('') + '</ul>'
 
 }
