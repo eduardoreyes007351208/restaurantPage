@@ -1,3 +1,8 @@
+/* 
+    menuPage.js
+    Module that sets content to Menu Page
+*/
+
 import { content } from "./elements"
 
 export const menuPage = () => {

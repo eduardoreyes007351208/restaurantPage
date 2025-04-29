@@ -2,16 +2,23 @@ import './styles.css'
 import './reset.css'
 
 import { home, menu, about, content } from './modules/elements'
-import { helloo } from './modules/homePage'
+import { homePage } from './modules/homePage'
 import { menuPage } from './modules/menuPage'
+import { aboutPage } from './modules/aboutPage'
 
 (() => {
-    helloo()
+
+    homePage()
+
     home.addEventListener('click', () => {
-        helloo()
+        homePage();
     })
     menu.addEventListener('click', () => {
-        menuPage()
+        menuPage();
     })
+    about.addEventListener('click', () => {
+        aboutPage();
+    })
+
     
 })()

@@ -1,8 +1,12 @@
-// homePage.js\
+/* 
+    homePage.js
+    Module that sets content to Home Page
+*/
+
 import foodImage from '../images/food.jpeg'
 import { content } from './elements'
 
-export const helloo = () => {
+export const homePage = () => {
 
     content.innerHTML = `
         <div id="contentText">
