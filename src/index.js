@@ -7,6 +7,9 @@ import { menuPage } from './modules/menuPage'
 
 (() => {
     helloo()
+    home.addEventListener('click', () => {
+        helloo()
+    })
     menu.addEventListener('click', () => {
         menuPage()
     })
