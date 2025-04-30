@@ -7,7 +7,7 @@
     --primary-color: #C890A7;
     --secondary-color: #FBF5E5;
     --dark-color: #212121;
-    --neutral-color: #424242;
+    --neutral-color: #DDDDDD;
 
     font-family: Futura;
     font-size: 12px;
@@ -23,12 +23,33 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 16px 64px;
+    box-shadow: 0px 4px 6px var(--dark-color);
 }
 
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#navbar {
+    display: flex;
+    gap: 32px;
+}
+.navButton {
+    padding: 12px 18px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--neutral-color);
+    box-shadow: 4px 4px var(--dark-color);
+}
+.navButton:hover {
+    cursor: pointer;
+    background-color: var(--dark-color);
+    color: var(--neutral-color);
 }
 
 #logoImage {
