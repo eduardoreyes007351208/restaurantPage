@@ -95,3 +95,43 @@ body {
     width: 128px;
     height: auto;
 }
+
+
+#menuContainer {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    place-content: center;
+    gap: 32px;
+    padding: 64px 24px;
+}
+.menuCard {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--neutral-color);
+    padding: 32px ;
+    gap: 8px;
+    border-radius: 5px;
+    box-shadow: 4px 4px var(--dark-color);
+}
+.menuCardTitle {
+    font-size: 1.66rem;
+}
+.menuCardPrice {
+    font-size: 1.33rem;
+}
+#menuPageTitle {
+    text-align: center;
+    padding-top: 64px;
+    font-size: 2.75rem;
+}
+
+.listItems {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
