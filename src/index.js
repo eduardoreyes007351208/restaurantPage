@@ -8,7 +8,7 @@ import { aboutPage } from './modules/aboutPage'
 
 (() => {
 
-    homePage()
+    homePage();
 
     home.addEventListener('click', () => {
         homePage();
